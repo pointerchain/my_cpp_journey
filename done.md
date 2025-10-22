@@ -1,7 +1,25 @@
+## 2025-10-21
+
+- Updated/Refactored the `C++ Rock Paper Scissors`, moving over to **C++23** from **C++20** - **[cpp_rock_paper_scissors](https://github.com/pointerchain/cpp_rock_paper_scissors/tree/17006e4f783e4b4259da433b7e74fd3c9b11a0bf)**
+    - Took me around 15 minutes to update it. Was planning on sticking out C++20 and under for a little while but decided to just go to C++23 because I think it will be more beneficial in the long run.
+    - Learned about using `std::print`, `std::println`, and `std::unreachable`.
+- Created a console based `C++ Rock Paper Scissors` application - **[cpp_rock_paper_scissors](https://github.com/pointerchain/cpp_rock_paper_scissors/tree/2c349137b2d187d980a3bcf6dd214c399e72a099)**.
+    - Took me around an hour and a half to write, felt happy with the results.
+    - Learned about `std::unordered_map`, practiced using `enum class`, learned how to use `static` local variables effectively, and a lot more.
+    - Learned a lot about modern ways to generate random numbers, using `std::random_device`, `std::mt19937`, and `std::uniform_int_distribution`.
+
+## 2025-10-20
+
+- Spent most of the day taking care of my dog after he had his teeth pulled.
+- Read the first chapter of `A Tour of C++ Third Edition by Bjarne Stroustrup`.
+
 ## 2025-10-19
 
-- Created a C++ Calculator console application called **[cpp_calculator](https://github.com/pointerchain/cpp_calculator)**.
+- Created a console based `C++ Calculator console application` - **[cpp_calculator](https://github.com/pointerchain/cpp_calculator/tree/42b5cceeb532d98bd5c1b34d91f5128bd9170014)**.
     - This was my first project using the complete workflow, and I'm proud of how it went.
+    - Took me around 45 minutes to write, actually had a good amount of fun and went pretty smoothly.
+    - Learned a lot about how to properly use `std::cin`, how to write good *robust* and *safe* code.
+    - Got some good practice with just good *control flow* and *minimizing variable scope*. 
 - Practiced making `CMakeLists.txt` from scratch; got comfortable with it after a few projects.
 - Practiced C++ project creation workflow (`mkdir` -> `git init` -> `mkdir src include build` -> etc).
 - Re-setup all of Fedora environment, installing packages and fixing configs.
@@ -16,3 +34,4 @@
 - Reinstalled a fresh Fedora 42 Sway Spin and deleted the old boot partition.
 - Created a new Gmail and Github account for my new C++ journey.
 - Setup GitHub repos **[Profile README](https://github.com/pointerchain/pointerchain)** and **[Done List](https://github.com/pointerchain/my_cpp_journey)**.
+- **The start of my C++ and Linux journey! Wish me luck!**
