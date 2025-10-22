@@ -1,5 +1,7 @@
 ## 2025-10-21
 
+- Successfully created my first C++ solution for a LeetCode problem, `Two Sum` - **[0001_two_sum](https://github.com/pointerchain/leetcode_solutions/tree/8648d6acc5e577919ba518c975ee7280c1dd08df/0001_two_sum)**
+- Made a GitHub repo for LeetCode solutions - **[leetcode_solutions](https://github.com/pointerchain/leetcode_solutions)**
 - Updated/Refactored the `C++ Rock Paper Scissors`, moving over to **C++23** from **C++20** - **[cpp_rock_paper_scissors](https://github.com/pointerchain/cpp_rock_paper_scissors/tree/17006e4f783e4b4259da433b7e74fd3c9b11a0bf)**
     - Took me around 15 minutes to update it. Was planning on sticking out C++20 and under for a little while but decided to just go to C++23 because I think it will be more beneficial in the long run.
     - Learned about using `std::print`, `std::println`, and `std::unreachable`.
@@ -22,6 +24,7 @@
     - Got some good practice with just good *control flow* and *minimizing variable scope*. 
 - Practiced making `CMakeLists.txt` from scratch; got comfortable with it after a few projects.
 - Practiced C++ project creation workflow (`mkdir` -> `git init` -> `mkdir src include build` -> etc).
+- Installed `alacritty` and setup as default terminal emulator over prepackages one.
 - Re-setup all of Fedora environment, installing packages and fixing configs.
 - Installed a fresh Fedora 42 i3 Spin because of Nvidia compatibility issues with Wayland.
 
@@ -29,7 +32,7 @@
 
 - Installed the C++ development toolchain (`g++`, `clang++`, `gdb`, `make`, `cmake`).
 - Setup a bunch of CLI tools like `fzf`, `zoxide`, and `git`.
-- Committed my first code repo **[my_first_project](https://github.com/pointerchain/pointerchain)**.
+- Committed my first code repo - **[my_first_project](https://github.com/pointerchain/pointerchain)**.
 - Setup VS Code on new Fedora 42 Sway Spin.
 - Reinstalled a fresh Fedora 42 Sway Spin and deleted the old boot partition.
 - Created a new Gmail and Github account for my new C++ journey.
