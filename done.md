@@ -1,3 +1,9 @@
+## 2025-10-22
+
+- Read the second chapter of `A Tour of C++ Third Edition by Bjarne Stroustrup`.
+- Did some research into `neovim`, thinking about switching from `VS Code` to `neovim`.
+- Successfully created a C++ solution for the LeetCode problem, `Roman to Integer` - **[0013_roman_to_integer](https://github.com/pointerchain/leetcode_solutions/tree/d6a34cbe57ccabfb61d802cff7e15f18fc7833f0/0013_roman_to_integer)**
+
 ## 2025-10-21
 
 - Successfully created my first C++ solution for a LeetCode problem, `Two Sum` - **[0001_two_sum](https://github.com/pointerchain/leetcode_solutions/tree/8648d6acc5e577919ba518c975ee7280c1dd08df/0001_two_sum)**
@@ -35,6 +41,6 @@
 - Committed my first code repo - **[my_first_project](https://github.com/pointerchain/pointerchain)**.
 - Setup VS Code on new Fedora 42 Sway Spin.
 - Reinstalled a fresh Fedora 42 Sway Spin and deleted the old boot partition.
-- Created a new Gmail and Github account for my new C++ journey.
-- Setup GitHub repos **[Profile README](https://github.com/pointerchain/pointerchain)** and **[Done List](https://github.com/pointerchain/my_cpp_journey)**.
+- Created a new Gmail and Github account for my new C++ journey. 
+- Setup GitHub repos **[Profile README](https://github.com/pointerchain/pointerchain)** and **[Done List](https://github.com/pointerchain/my_cpp_journey)**. `[Admin]`
 - **The start of my C++ and Linux journey! Wish me luck!**
