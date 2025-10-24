@@ -1,5 +1,12 @@
+## 2025-10-23
+
+- Successfully created a C++ solution for the LeetCode problem, `Valid Parentheses` - **[0013_roman_to_integer](https://github.com/pointerchain/leetcode_solutions/tree/8c25db692b95652fcd13c8f23d0b1e2f6ece3e13/0020_valid_parentheses)**
+    - Learned about `std::stack`.
+- Installed the terminal multiplexer `zellij`.
+
 ## 2025-10-22
 
+- Learned about proper naming conventions according to the Google Style Guide for C++.
 - Read the second chapter of `A Tour of C++ Third Edition by Bjarne Stroustrup`.
 - Did some research into `neovim`, thinking about switching from `VS Code` to `neovim`.
 - Successfully created a C++ solution for the LeetCode problem, `Roman to Integer` - **[0013_roman_to_integer](https://github.com/pointerchain/leetcode_solutions/tree/d6a34cbe57ccabfb61d802cff7e15f18fc7833f0/0013_roman_to_integer)**
