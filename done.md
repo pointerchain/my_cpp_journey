@@ -1,3 +1,7 @@
+## 2025-10-24
+- Doctors Appointment / Rest Day.
+
+
 ## 2025-10-23
 
 - Successfully created a C++ solution for the LeetCode problem, `Valid Parentheses` - **[0013_roman_to_integer](https://github.com/pointerchain/leetcode_solutions/tree/8c25db692b95652fcd13c8f23d0b1e2f6ece3e13/0020_valid_parentheses)**
