@@ -1,10 +1,20 @@
-## 2025-10-24
-- Doctors Appointment / Rest Day.
-
+## 2025-11-1
+- Created a Command-Line Utility `C++ To-Do List Utility` - **[cpp_todo_list_utility](https://github.com/pointerchain/cpp_todo_list_utility/tree/4abadb67bf9aebd8ef84ef556dfd695fb2384009)**
+    - Took me around two hours. Was little rocky but I pulled through.
+    - Learned a lot about `Command-Line Arguments`.
+    - Learned a lot about working with the File System in C++ using `fstream` and `filesystem`
+    - Improved my knowledge on catching exceptions.
+    - Really tried to hammer in good practices and modern C++ idioms, though it's obviously a WIP.
+- Fixed a bunch of VS Code config issues and updated `settings.json` to work with Clang.
+- Switched from using `GCC` to `Clang`.
+- Downloaded and started using the `GitHub CLI`.
+- Created a C++ starter template GitHub template project - **[cpp_starter_template](https://github.com/pointerchain/cpp_starter_template)**
+    - Learned about CMakePresets.json
+- Took a break but I am now getting back on the grind.
 
 ## 2025-10-23
 
-- Successfully created a C++ solution for the LeetCode problem, `Valid Parentheses` - **[0013_roman_to_integer](https://github.com/pointerchain/leetcode_solutions/tree/8c25db692b95652fcd13c8f23d0b1e2f6ece3e13/0020_valid_parentheses)**
+- Successfully created a C++ solution for the LeetCode problem, `Valid Parentheses` - **[0020_valid_parentheses](https://github.com/pointerchain/leetcode_solutions/tree/8c25db692b95652fcd13c8f23d0b1e2f6ece3e13/0020_valid_parentheses)**
     - Learned about `std::stack`.
 - Installed the terminal multiplexer `zellij`.
 
@@ -41,17 +51,17 @@
     - Got some good practice with just good *control flow* and *minimizing variable scope*. 
 - Practiced making `CMakeLists.txt` from scratch; got comfortable with it after a few projects.
 - Practiced C++ project creation workflow (`mkdir` -> `git init` -> `mkdir src include build` -> etc).
-- Installed `alacritty` and setup as default terminal emulator over prepackages one.
+- Installed `alacritty` and set up as default terminal emulator over the prepackaged one.
 - Re-setup all of Fedora environment, installing packages and fixing configs.
 - Installed a fresh Fedora 42 i3 Spin because of Nvidia compatibility issues with Wayland.
 
 ## 2025-10-18
 
 - Installed the C++ development toolchain (`g++`, `clang++`, `gdb`, `make`, `cmake`).
-- Setup a bunch of CLI tools like `fzf`, `zoxide`, and `git`.
+- Set up a bunch of CLI tools like `fzf`, `zoxide`, and `git`.
 - Committed my first code repo - **[my_first_project](https://github.com/pointerchain/pointerchain)**.
-- Setup VS Code on new Fedora 42 Sway Spin.
+- Set up VS Code on new Fedora 42 Sway Spin.
 - Reinstalled a fresh Fedora 42 Sway Spin and deleted the old boot partition.
 - Created a new Gmail and Github account for my new C++ journey. 
-- Setup GitHub repos **[Profile README](https://github.com/pointerchain/pointerchain)** and **[Done List](https://github.com/pointerchain/my_cpp_journey)**. `[Admin]`
+- Set up GitHub repos **[Profile README](https://github.com/pointerchain/pointerchain)** and **[Done List](https://github.com/pointerchain/my_cpp_journey)**. `[Admin]`
 - **The start of my C++ and Linux journey! Wish me luck!**
