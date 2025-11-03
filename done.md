@@ -1,3 +1,9 @@
+## 2025-11-02
+- Successfully created a C++ solution for the LeetCode problem, `Remove Element` - **[0027_remove_element](https://github.com/pointerchain/leetcode_solutions/tree/af0efd533199c6bda9883a443b6243be856d7aca/0027_remove_element)**
+- Read more about `CMake` and also read about using `package managers` like `vcpkg`.
+- Also read about `Json` and `Protobuf` which help avoid the headaches of compatibility and versioning.
+- Read a lot about files and writing in `binary mode`, learned about `versioning` and `serialization`.
+
 ## 2025-11-1
 - Created a Command-Line Utility `C++ To-Do List Utility` - **[cpp_todo_list_utility](https://github.com/pointerchain/cpp_todo_list_utility/tree/4abadb67bf9aebd8ef84ef556dfd695fb2384009)**
     - Took me around two hours. Was little rocky but I pulled through.
