@@ -1,3 +1,18 @@
+## 2024-11-04
+- Worked on the interactive mode for the cpp_todo_list_utility, didn't get a working version yet. Going to finish tomorrow.
+- Learned about some string parsing techniques like `std::stringstream`.
+
+
+## 2025-11-03
+- Completed a major refactor and feature update for the cpp_todo_list_utility. **[cpp_todo_list_utility](https://github.com/pointerchain/cpp_todo_list_utility/commit/7067e85f1f499f7d6e75e1c97918366f61d47821)**
+    - Refactored the application by introducing a new `TodoList class`, abstracting all business logic away from main.
+    - Added several new features, including `edit`, `done`, `clear`, and `help` commands, complete with short aliases (e.g., e, d, c, h).
+    - Implemented the done functionality to move completed tasks from todo.txt to a new done.txt file.
+    - Modernized the project's error handling by replacing `C-Style integer return codes` with `std::expected` and `custom error enums` (TodoListError, FileEditorError).
+    - Enhanced the `FileEditor class` with new `EditLine`, `GetLine`, and `Delete` methods to support the new features.
+    - Improved `command-line argument parsing` to correctly handle multi-word task inputs.
+
+
 ## 2025-11-02
 - Successfully created a C++ solution for the LeetCode problem, `Remove Element` - **[0027_remove_element](https://github.com/pointerchain/leetcode_solutions/tree/af0efd533199c6bda9883a443b6243be856d7aca/0027_remove_element)**
 - Read more about `CMake` and also read about using `package managers` like `vcpkg`.
