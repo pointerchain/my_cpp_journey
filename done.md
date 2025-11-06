@@ -1,7 +1,10 @@
 ## 2024-11-04
+- Successfully got interactive mode working for cpp_todo_list_utility. **[cpp_todo_list_utility](https://github.com/pointerchain/cpp_todo_list_utility/tree/dfe54b69fd311583b7e22b2e28e2614d376874a2)**
+    - Went smoothly for the most part, happy with result.
+
+## 2024-11-04
 - Worked on the interactive mode for the cpp_todo_list_utility, didn't get a working version yet. Going to finish tomorrow.
 - Learned about some string parsing techniques like `std::stringstream`.
-
 
 ## 2025-11-03
 - Completed a major refactor and feature update for the cpp_todo_list_utility. **[cpp_todo_list_utility](https://github.com/pointerchain/cpp_todo_list_utility/commit/7067e85f1f499f7d6e75e1c97918366f61d47821)**
