@@ -1,8 +1,15 @@
-## 2024-11-04
+## 2025-11-06
+- Successfully added `task priority` support for adding new tasks by prefixing it with a tag `[h/m/l]` **[cpp_todo_list_utility](https://github.com/pointerchain/cpp_todo_list_utility/tree/d2569d08a0ac0850c5100c69ad20f224afcaca48)**
+    - Got a lot more comfortable working with `std::string` and `std::stringstream`.
+    - Learned about `lambdas [&]() {};` also learned about `IIFE [&]() {}();` which I needed to use because my FileEditor does not have a `default constructor`.
+- Added a utils.hpp file for simple inline functions for cpp_todo_list_utility. **[cpp_todo_list_utility](https://github.com/pointerchain/cpp_todo_list_utility/tree/1b80ef63cd9dc170c213a3e7c406eac075c986a3)**
+    - Learned about using `inline` for simple helpers where it's preferred to only have a header file versus a header file and source file.
+
+## 2025-11-05
 - Successfully got interactive mode working for cpp_todo_list_utility. **[cpp_todo_list_utility](https://github.com/pointerchain/cpp_todo_list_utility/tree/dfe54b69fd311583b7e22b2e28e2614d376874a2)**
     - Went smoothly for the most part, happy with result.
 
-## 2024-11-04
+## 2025-11-04
 - Worked on the interactive mode for the cpp_todo_list_utility, didn't get a working version yet. Going to finish tomorrow.
 - Learned about some string parsing techniques like `std::stringstream`.
 
