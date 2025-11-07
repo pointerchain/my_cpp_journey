@@ -1,4 +1,5 @@
 ## 2025-11-06
+- Successfully created a C++ solution for the LeetCode problem, `Plus One` - **[0027_remove_element](https://github.com/pointerchain/leetcode_solutions/tree/989f23893c630fd89c5684298f962e3d7b223be5/0066_plus_one)**
 - Successfully added `task priority` support for adding new tasks by prefixing it with a tag `[h/m/l]` **[cpp_todo_list_utility](https://github.com/pointerchain/cpp_todo_list_utility/tree/d2569d08a0ac0850c5100c69ad20f224afcaca48)**
     - Got a lot more comfortable working with `std::string` and `std::stringstream`.
     - Learned about `lambdas [&]() {};` also learned about `IIFE [&]() {}();` which I needed to use because my FileEditor does not have a `default constructor`.
