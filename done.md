@@ -1,3 +1,33 @@
+## 2025-11-08
+- Successfully created a C++ solution for the LeetCode problem, `Climbing Stairs` - **[0070_climbing_stairs](https://github.com/pointerchain/leetcode_solutions/tree/f8f3f50d860e0102223080f884752bb14f3f3326/0070_climbing_stairs)**
+    - Got some get practice with `recursion` and learned about `memoization`.
+- Updated `Roguelike game` to have `sprite` support. **[roguelike_game](https://github.com/pointerchain/roguelike_game/tree/49e6c87d9754dca1618d5b7843d012a9a9e03bc0)**
+    - Got rid of the old `sf::RectangleShape` in favor of using `sf:Texture` and `sf:Sprite.`
+    - Downloaded a free sprite pack from `itch.io` to use for the game.
+    - Had to use `setTextureRect` because the png was a `sprite sheet`.
+    - Got the sprite to flip using `setScale` so the sprite properly faces the direction the character is moving.
+- Created a `Roguelike Game` project on GitHub. **[roguelike_game](https://github.com/pointerchain/roguelike_game/tree/d5bfc84ed07e6d6091fe4a9a47550c33ef68808b)**
+    - I decided to move away from the `2D Platformer` in favor of making a `Roguelike Game` instead, just thought it would be a little more fun.
+    - Setup simple `Character` class, very similar to my `2d_platformer` game with some refinements.
+    - Created an `Input` namespace for input related functions.
+    - Created a `Config` namespace for game constants, similar to `2d_platformer`.
+- In `cpp_starter_template` updated `README.md` to include requirements/build information and updated `CMakeLists.txt` to have proper target_include_directories support for /include **[cpp_starter_template](https://github.com/pointerchain/cpp_starter_template/tree/9638d719d783fa148b52552d9d3926a11d1a8583)
+- Updated `README.md` and `CMakeLists.txt` in `2d_platformer` to properly reflect name change and added more information to `README.md` **[2d_platformer](https://github.com/pointerchain/2d_platformer/tree/6b2cf30c3bbb59784d7cd3f0a49acd8419ae005a)**
+- Going to try to add `Requirements` and `Build` sections to all my future project's `README.md`s for easier usage.
+- Been learning about `Conventional Commits`.
+    - Using proper `Types` (feat: / fix: / refactor: / etc).
+    - Using `Imperative Mood` ("Add x" rather than "Added x").
+    - Use `(scope)` to easily give extra context on what this change directly effects (fix(player): Jump collision bug).
+    - Probably should of got this down earlier but will be trying to hammer it down for all my commit messages here forward.
+- Renamed GitHub repo for `cpp_sfml_testing` to `2d_platformer` to reflect the actual project better.
+- Big refactor for my 2D Platformer **[cpp_sfml_testing](https://github.com/pointerchain/cpp_sfml_testing/tree/655642f801e7e813924101686a2ff9adb85b80c3)**
+    - `Encapsulated` logic for character-esk logic to a concrete `Character` class (with respective .hpp and .cpp) that handles all character related logic.
+    - Moved away from using different variables to hold stats "in_air" to a proper enum class `ActionState` that is encapsulated inside of Character.
+    - Created a struct `PlayerInput` to merge player input logic for better `scalability` over passing each as their own variable directly as arguments.
+    - Created a `config.hpp` header to hold game `constants`.
+    - Created a new enum class `PlayerInput` t
+- Added `jumping capabilities` to my 2D Platformer **[cpp_sfml_testing](https://github.com/pointerchain/cpp_sfml_testing/tree/f23c025e6d14d06c85a87d74ef187331e5032deb)**
+
 ## 2025-11-07
 - Created a `C++ SFML Testing` project on GitHub. **[cpp_sfml_testing](https://github.com/pointerchain/cpp_sfml_testing/tree/7d5a6f24e353659a0b3b009dc66fc375bce9a861)**
     - This is my first time ever using an `external C++ library`. Had to download and correctly setup the `CMakeLists.txt`.
