@@ -1,3 +1,11 @@
+## 2025-11-07
+- Created a `C++ SFML Testing` project on GitHub. **[cpp_sfml_testing](https://github.com/pointerchain/cpp_sfml_testing/tree/7d5a6f24e353659a0b3b009dc66fc375bce9a861)**
+    - This is my first time ever using an `external C++ library`. Had to download and correctly setup the `CMakeLists.txt`.
+    - This kind of turned into a `2D Platformer`.
+    - You can move left and right using `A` and `D`. (Originally had `W` and `S` support as well but changed it for gravity instead)
+    - I also added `gravity` and `collision checking` for window boundaries.
+    - It's kind of a lot of little things I did that I don't think is worth typing them all out here but you can always look at the repo.
+
 ## 2025-11-06
 - Successfully created a C++ solution for the LeetCode problem, `Plus One` - **[0027_remove_element](https://github.com/pointerchain/leetcode_solutions/tree/989f23893c630fd89c5684298f962e3d7b223be5/0066_plus_one)**
 - Successfully added `task priority` support for adding new tasks by prefixing it with a tag `[h/m/l]` **[cpp_todo_list_utility](https://github.com/pointerchain/cpp_todo_list_utility/tree/d2569d08a0ac0850c5100c69ad20f224afcaca48)**
