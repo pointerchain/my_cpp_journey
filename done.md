@@ -1,3 +1,17 @@
+## 2025-11-09
+- Added a `Dashing` movement feature to my `Roguelike Game` **[roguelike_game](https://github.com/pointerchain/roguelike_game/tree/ccaf2caea63e2a3e91dc00301c48d8aaab9e460a)**
+    - Moved away from constant move speed to an `acceleration` based movement system.
+    - Added a `CharacterState` enum class and `state_` character member to store the character's current state (kNormal, kDashing)
+    - Added `dashing` by listening for the spacebar to down to activate a burst of movement in a specific direction.
+    - Honestly pretty happy with how I implemented this, went relatively smoothly.
+- Refactored all `game loop logic` abstracting it out of main.cpp into a `Game` class **[roguelike_game](https://github.com/pointerchain/roguelike_game/tree/487f2be5d089fb09b5690f4b7d9a2a435b79803b)**
+    - I didn't really like how all the logic was just in the main function, so I decided to move it to a `dedicated class` so that the `state` is easier to manage across function calls for easier organization.
+- Added a `Camera` system to my `Roguelike Game` project **[roguelike_game](https://github.com/pointerchain/roguelike_game/tree/0535c88e5466920a89f99a0a02c15ef6acf21a26)**
+    - Created a `Camera` class and used `sf::View` to track the Character's sprite position.
+- Added a `Map` system to my `Roguelike Game` project **[roguelike_game](https://github.com/pointerchain/roguelike_game/tree/917bcfbe0b18bffebf0dde053874ddeebbcd3888)**
+    - Created a `Map` class and used `sf::VertexArray` to create a `tilemap`.
+    - Learned a lot about actually connecting it with the proper `texture`.
+
 ## 2025-11-08
 - Successfully created a C++ solution for the LeetCode problem, `Climbing Stairs` - **[0070_climbing_stairs](https://github.com/pointerchain/leetcode_solutions/tree/f8f3f50d860e0102223080f884752bb14f3f3326/0070_climbing_stairs)**
     - Got some get practice with `recursion` and learned about `memoization`.
