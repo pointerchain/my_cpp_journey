@@ -1,9 +1,17 @@
+## 2025-11-11
+- Started learning about `EnTT` the `ECS framework`.
+    - Set up a small private project for testing.
+    - Learning to use along side `SFML`.
+- Updated my `cpp_starter_template` to have `vcpkg` support and also added a `.clangd` file to help with linter problems **[cpp_start_template](https://github.com/pointerchain/cpp_starter_template/tree/469b749ce2eb4bf0a1e34e754f7ae4d5f8083c69)**
+- Installed and set up `vcpkg`.
+    - Set up path in `~/.bashrc`
+
 ## 2025-11-10
 - Added an `Enemy` system to my `Roguelike Game` project **[roguelike_game](https://github.com/pointerchain/roguelike_game/tree/1726c5ec46b755cbc12547d86a948be417a42452)**
     - This was a *pretty big* update but I am happy so far with how it turned out, still a lot I want to add but this is just the start of it.
     - `Acceleration`-based movement, very similar to `Character`.
     - Implemented `Boids Separation` behavior to prevent enemies from *clumping together* too much.
-    - Also works on a simple `State Machine`, currently with two possible states: `kIdle` and `kChasing` with a working *aggro range* to switch states.
+    - Also set up a simple `State Machine`, currently with two possible states: `kIdle` and `kChasing` with a working *aggro range* to switch states.
 
 ## 2025-11-09
 - Added a `Dashing` movement feature to my `Roguelike Game` **[roguelike_game](https://github.com/pointerchain/roguelike_game/tree/ccaf2caea63e2a3e91dc00301c48d8aaab9e460a)**
