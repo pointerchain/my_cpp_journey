@@ -1,6 +1,13 @@
+## 2025-11-13
+- Deep dive into `EnTT` and set up a fully functional project combining `EnTT` with `SFML` **[entt_testing](https://github.com/pointerchain/entt_testing/tree/a89101a2c5ed8b886653f31d065c9c55bdd3c5c2)**
+    - Implemented several core `ECS systems` including `RenderSystem`, `PhysicsSystem`, and `InputSystem`.
+    - Got *much more comfortable* with the `Entity Component System` architecture pattern.
+    - Learned how to properly structure and organize systems to work together in the *game loop*.
+    - I'd say I got the hang up of it *pretty fast*. I enjoy the `ECS pattern` and find it some what intuitive, planning to make bigger project soon with it.
+
 ## 2025-11-11
 - Started learning about `EnTT` the `ECS framework`.
-    - Set up a small private project for testing.
+    - Set up a small project for testing.
     - Learning to use along side `SFML`.
 - Updated my `cpp_starter_template` to have `vcpkg` support and also added a `.clangd` file to help with linter problems **[cpp_start_template](https://github.com/pointerchain/cpp_starter_template/tree/469b749ce2eb4bf0a1e34e754f7ae4d5f8083c69)**
 - Installed and set up `vcpkg`.
