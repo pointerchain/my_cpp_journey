@@ -1,4 +1,21 @@
 ## 2025-11-13
+- Read the second chapter of `A Tour of C++ Third Edition by Bjarne Stroustrup`.
+- Started setting up initial structure for a `Pong Game` **[cpp_pong](https://github.com/pointerchain/cpp_pong/tree/cfd1c929316d5fe66533d968dadd94d84dd85823)**
+    - No actual pong elements yet, just applying the architectural patterns I learned today.
+    - Trying to *implement everything properly* from the start based on what I read.
+- Read *extensively* about `EnTT` and `SFML` integration and best practices.
+    - Learned that `EnTT` is a *container, not a framework* - you control the main loop completely, just use the registry like any other data container.
+    - Discovered `registry.ctx()` works as a *service locator* for global objects like `sf::RenderWindow`, keeping systems decoupled.
+    - Use `entt::view` by default for most systems, only upgrade to `entt::group` when profiling reveals actual bottlenecks.
+    - Learned to decouple input using `entt::dispatcher` - translate SFML events into game-specific events so systems listen to the dispatcher instead of SFML directly.
+    - Components should be *Plain Old Data* (POD) only - no heavy objects like `sf::Sprite` inside components. Systems should use transient objects and map component data onto them.
+    - Safe deletion pattern: tag entities with a `ToDestroy` component, then a `CleanupSystem` runs at the end of the loop to safely destroy them. *Never* call `registry.destroy()` inside iteration loops.
+    - For collisions, use a dedicated spatial structure (like a `quadtree`) for broad-phase detection, then use ECS to get components for precise checks.
+- Created a private project `CPP Sandbox` for fast testing and messing around in C++.
+    - A simple codebase to quickly *prototype* and *experiment* with new C++ concepts without the overhead of setting up a full project each time.
+    - Probably should of made this early lol.
+
+## 2025-11-12
 - Deep dive into `EnTT` and set up a fully functional project combining `EnTT` with `SFML` **[entt_testing](https://github.com/pointerchain/entt_testing/tree/a89101a2c5ed8b886653f31d065c9c55bdd3c5c2)**
     - Implemented several core `ECS systems` including `RenderSystem`, `PhysicsSystem`, and `InputSystem`.
     - Got *much more comfortable* with the `Entity Component System` architecture pattern.
@@ -6,7 +23,7 @@
     - I'd say I got the hang up of it *pretty fast*. I enjoy the `ECS pattern` and find it some what intuitive, planning to make bigger project soon with it.
 
 ## 2025-11-11
-- Started learning about `EnTT` the `ECS framework`.
+- Started learning about `EnTT` the `ECS library`.
     - Set up a small project for testing.
     - Learning to use along side `SFML`.
 - Updated my `cpp_starter_template` to have `vcpkg` support and also added a `.clangd` file to help with linter problems **[cpp_start_template](https://github.com/pointerchain/cpp_starter_template/tree/469b749ce2eb4bf0a1e34e754f7ae4d5f8083c69)**
