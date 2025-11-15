@@ -1,3 +1,12 @@
+## 2025-11-14
+- Made significant progress on `Pong Game` by integrating core systems **[cpp_pong](https://github.com/pointerchain/cpp_pong/tree/92cd05d768c87ce1be603f05eaa6baa5aaf508d2)**
+    - Implemented `EventHandlingSystem` for *decoupled input* processing.
+    - Added `PhysicsSystem` to handle entity movement and physics updates.
+    - Created `BorderCheckingSystem` to keep entities within *game boundaries*.
+    - Set up `RenderSystem` for drawing all game entities.
+    - Updated `Game` class to manage window positioning and entity creation.
+    - Trying to use the knowledge I read about yesterday.
+
 ## 2025-11-13
 - Read the second chapter of `A Tour of C++ Third Edition by Bjarne Stroustrup`.
 - Started setting up initial structure for a `Pong Game` **[cpp_pong](https://github.com/pointerchain/cpp_pong/tree/cfd1c929316d5fe66533d968dadd94d84dd85823)**
