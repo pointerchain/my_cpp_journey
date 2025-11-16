@@ -1,11 +1,31 @@
+## 2025-11-15
+- Optimized `Pong Game` by integrating `Factory` into the registry context **[cpp_pong](https://github.com/pointerchain/cpp_pong/tree/4ca04bc5d4719cdd32299aa4b41aea2d09b0a2f7)**
+    - Moved `Factory` into the `Game` class and added it to `registry.ctx()` so it's not recreated every tick.
+    - `SpawnSystem` now just retrieves the factory from context instead of creating a new one.
+- Refactored `Pong Game` to decouple spawning logic **[cpp_pong](https://github.com/pointerchain/cpp_pong/tree/f36088de8bfe4360ab793dcbff669e9b840602e9)**
+    - Created dedicated `SpawnSystem` and `SpawnBallRequest` component to handle all spawning logic.
+    - `ScoreSystem` now just creates a request entity instead of directly spawning, for better *separation of concerns*.
+- Enhanced `Pong Game` with ball spawning, score tracking, and refined controls **[cpp_pong](https://github.com/pointerchain/cpp_pong/tree/babcd42a32a0659455eca07412d3bec3beeff1d3)**
+    - The *game loop is working and complete*! I do need to do some more cleanup and I might want to add more features, but at least the game loop is working which is cool. (The whole game is in ECS so it's super scalable lol, could really do some wacky stuff)
+    - Implemented a `Ball State Machine` with `BallState` enum (Spawning, Active) and a *timer system* that freezes the ball before spawning - thought this was *pretty cool*.
+    - Added a fully `event-based scoring system` that's completely decoupled - the whole flow from border detection to score update to ball respawn is *entirely event-driven*.
+    - Created `config.hpp` to centralize game constants and eliminate *magic numbers*.
+- Continued work on `Pong Game` with paddle functionality and code refactoring **[cpp_pong](https://github.com/pointerchain/cpp_pong/tree/92cd05d768c87ce1be603f05eaa6baa5aaf508d2)**
+    - The game is starting to take shape. I am starting to get the *feel and understanding* for working with `EnTT` and `ECS` in general.
+    - Implemented `PaddleMovementSystem` to handle paddle controls.
+    - Updated `EventHandlingSystem` to process paddle input events.
+    - Refactored component headers to follow proper *directory structure* for better organization.
+    - Got to use my knowledge and learned more about `entt::dispatcher` and how to properly create *scalable* and *uncoupled* systems.
+    - Got comfortable using `dispatcher.enqueue()`, `dispatcher.update()`, and `dispatcher.sink()` to build the `event-driven architecture`.
+
 ## 2025-11-14
 - Made significant progress on `Pong Game` by integrating core systems **[cpp_pong](https://github.com/pointerchain/cpp_pong/tree/92cd05d768c87ce1be603f05eaa6baa5aaf508d2)**
+    - Trying to use the knowledge I read about yesterday.
     - Implemented `EventHandlingSystem` for *decoupled input* processing.
     - Added `PhysicsSystem` to handle entity movement and physics updates.
     - Created `BorderCheckingSystem` to keep entities within *game boundaries*.
     - Set up `RenderSystem` for drawing all game entities.
     - Updated `Game` class to manage window positioning and entity creation.
-    - Trying to use the knowledge I read about yesterday.
 
 ## 2025-11-13
 - Read the second chapter of `A Tour of C++ Third Edition by Bjarne Stroustrup`.
@@ -14,7 +34,7 @@
     - Trying to *implement everything properly* from the start based on what I read.
 - Read *extensively* about `EnTT` and `SFML` integration and best practices.
     - Learned that `EnTT` is a *container, not a framework* - you control the main loop completely, just use the registry like any other data container.
-    - Discovered `registry.ctx()` works as a *service locator* for global objects like `sf::RenderWindow`, keeping systems decoupled.
+    - Learned that `registry.ctx()` works as a *service locator* for global objects like `sf::RenderWindow`, keeping systems decoupled.
     - Use `entt::view` by default for most systems, only upgrade to `entt::group` when profiling reveals actual bottlenecks.
     - Learned to decouple input using `entt::dispatcher` - translate SFML events into game-specific events so systems listen to the dispatcher instead of SFML directly.
     - Components should be *Plain Old Data* (POD) only - no heavy objects like `sf::Sprite` inside components. Systems should use transient objects and map component data onto them.
@@ -22,13 +42,13 @@
     - For collisions, use a dedicated spatial structure (like a `quadtree`) for broad-phase detection, then use ECS to get components for precise checks.
 - Created a private project `CPP Sandbox` for fast testing and messing around in C++.
     - A simple codebase to quickly *prototype* and *experiment* with new C++ concepts without the overhead of setting up a full project each time.
-    - Probably should of made this early lol.
+    - Probably should of made this earlier lol.
 
 ## 2025-11-12
 - Deep dive into `EnTT` and set up a fully functional project combining `EnTT` with `SFML` **[entt_testing](https://github.com/pointerchain/entt_testing/tree/a89101a2c5ed8b886653f31d065c9c55bdd3c5c2)**
     - Implemented several core `ECS systems` including `RenderSystem`, `PhysicsSystem`, and `InputSystem`.
     - Got *much more comfortable* with the `Entity Component System` architecture pattern.
-    - Learned how to properly structure and organize systems to work together in the *game loop*.
+    - Learned how to *properly* structure and *organize* systems to work together in the *game loop*.
     - I'd say I got the hang up of it *pretty fast*. I enjoy the `ECS pattern` and find it some what intuitive, planning to make bigger project soon with it.
 
 ## 2025-11-11
