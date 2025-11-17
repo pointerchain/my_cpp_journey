@@ -1,3 +1,10 @@
+## 2025-11-16
+- Implemented score UI for `Pong Game` **[cpp_pong](https://github.com/pointerchain/cpp_pong/tree/655d42e796a420c91439ed5f35cc4597c160ae96)**
+    - Learned about `sf::Text` and `sf::Font` for rendering text in SFML.
+    - Learned more about `singleton components` and how you can just put them inside of `ctx` too.
+    - Got the score displaying on screen and working within the `ECS paradigm` which was *pretty cool*.
+    - Still want to look at it more tomorrow and refine the implementation.
+
 ## 2025-11-15
 - Optimized `Pong Game` by integrating `Factory` into the registry context **[cpp_pong](https://github.com/pointerchain/cpp_pong/tree/4ca04bc5d4719cdd32299aa4b41aea2d09b0a2f7)**
     - Moved `Factory` into the `Game` class and added it to `registry.ctx()` so it's not recreated every tick.
