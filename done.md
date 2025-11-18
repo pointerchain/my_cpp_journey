@@ -1,3 +1,11 @@
+## 2025-11-17
+- Successfully created a C++ solution for the LeetCode problem `Find First Occurrence` **[0028_find_first_occurrence](https://github.com/pointerchain/leetcode_solutions/tree/361160abf669496785e81ada7813f3bef76ea41a/0028_find_first_occurrence)**
+    - Used `substr` which I haven't really gotten to use before, even though it's probably better to just use a nested for loop lol.
+- Read more about `compilers`, `assemblers`, and `linkers` to clarify and deepen my understanding of the underlying build process.
+    - Elucidated the build pipeline for myself: `Preprocessor` -> `Compiler` -> `Assembler` -> `Linker`.
+    - Learned that people commonly call the entire toolchain a "compiler" even though in a strict sense the compiler is just one tool on the toolchain - most people mean the "driver program" when they say compiler.
+    - Got a much clearer picture of what happens when I build my C++ projects.
+
 ## 2025-11-16
 - Implemented score UI for `Pong Game` **[cpp_pong](https://github.com/pointerchain/cpp_pong/tree/655d42e796a420c91439ed5f35cc4597c160ae96)**
     - Learned about `sf::Text` and `sf::Font` for rendering text in SFML.
