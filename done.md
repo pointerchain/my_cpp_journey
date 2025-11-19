@@ -1,3 +1,8 @@
+## 2025-11-18
+- Read a lot about `JSON`, `YAML`, and `TOML` in preparation for the `Roguelike ECS` project.
+    - Learning about different data serialization formats and their use cases.
+    - Planning to use a *hybrid approach*: `YAML` for designer-facing data like monster stats and stuff, and `JSON` for saving/loading game state.
+
 ## 2025-11-17
 - Successfully created a C++ solution for the LeetCode problem `Find First Occurrence` **[0028_find_first_occurrence](https://github.com/pointerchain/leetcode_solutions/tree/361160abf669496785e81ada7813f3bef76ea41a/0028_find_first_occurrence)**
     - Used `substr` which I haven't really gotten to use before, even though it's probably better to just use a nested for loop lol.
@@ -20,7 +25,7 @@
 - Refactored `Pong Game` to decouple spawning logic **[cpp_pong](https://github.com/pointerchain/cpp_pong/tree/f36088de8bfe4360ab793dcbff669e9b840602e9)**
     - Created dedicated `SpawnSystem` and `SpawnBallRequest` component to handle all spawning logic.
     - `ScoreSystem` now just creates a request entity instead of directly spawning, for better *separation of concerns*.
-- Enhanced `Pong Game` with ball spawning, score tracking, and refined controls **[cpp_pong](https://github.com/pointerchain/cpp_pong/tree/babcd42a32a0659455eca07412d3bec3beeff1d3)**
+- Enhanced `Pong Game` with balAl spawning, score tracking, and refined controls **[cpp_pong](https://github.com/pointerchain/cpp_pong/tree/babcd42a32a0659455eca07412d3bec3beeff1d3)**
     - The *game loop is working and complete*! I do need to do some more cleanup and I might want to add more features, but at least the game loop is working which is cool. (The whole game is in ECS so it's super scalable lol, could really do some wacky stuff)
     - Implemented a `Ball State Machine` with `BallState` enum (Spawning, Active) and a *timer system* that freezes the ball before spawning - thought this was *pretty cool*.
     - Added a fully `event-based scoring system` that's completely decoupled - the whole flow from border detection to score update to ball respawn is *entirely event-driven*.
