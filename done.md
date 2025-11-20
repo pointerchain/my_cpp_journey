@@ -1,3 +1,14 @@
+## 2025-11-19
+- Created `ECS Roguelike` project and got initial structure working **[ecs_roguelike](https://github.com/pointerchain/ecs_roguelike/tree/8d75192e7081f3a27ea6fe2179bdcb290621954b)**
+    - Copied the structure from my `ECS Pong` project and deleted all pong-specific code, keeping the *great architecture* I built.
+    - Got 4-directional movement working and refactored it differently than pong (which was only y-axis).
+    - Created a `PlayerInput` struct with `up`, `down`, `left`, `right` bools to separate I/O from logic.
+    - `PlayerInput` is a *singleton* that I enqueue into the registry's `ctx`.
+    - `EventSystem` now just updates the input struct for movement keys, keeping logic separate from I/O events.
+    - `PlayerControlSystem` handles the actual velocity changes based on the input state.
+- Read about `iterators` in `C++ Primer Fifth Edition` (section 3.4).
+    - Felt like `iterators` were a bit of a blind spot in my C++ understanding so I decided to read about them in `Primer`. 
+
 ## 2025-11-18
 - Read a lot about `JSON`, `YAML`, and `TOML` in preparation for the `Roguelike ECS` project.
     - Learning about different data serialization formats and their use cases.
