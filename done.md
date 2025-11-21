@@ -1,3 +1,9 @@
+## 2025-11-20
+- Read about `C++ modules` and how they drastically improve compile times.
+    - A module is only compiled *once* into a `binary format`.
+    - When you import a module, the compiler loads a `pre-compiled interface` almost *instantly*.
+    - They prevent `Macro Leakage` which is a common problem with traditional header files.
+
 ## 2025-11-19
 - Created `ECS Roguelike` project and got initial structure working **[ecs_roguelike](https://github.com/pointerchain/ecs_roguelike/tree/8d75192e7081f3a27ea6fe2179bdcb290621954b)**
     - Copied the structure from my `ECS Pong` project and deleted all pong-specific code, keeping the *great architecture* I built.
