@@ -1,3 +1,7 @@
+## 2025-11-22
+- Tried to do a LeetCode problem but couldn't get it working - will finish tomorrow.
+- More of a rest day.
+
 ## 2025-11-21
 - Successfully created a C++ solution for the LeetCode problem `Search Insert Position` **[0035_search_insert_position](https://github.com/pointerchain/leetcode_solutions/tree/3c74291404cfe0794d009dc8726dd22aacc17bdd/0035_search_insert_position)**
     - Learned about the `Binary Search` algorithm. (Kind of already knew about it but it is the first time I have had to write it in a while)
