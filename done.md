@@ -1,3 +1,7 @@
+## 2025-11-23
+- Successfully created a C++ solution for the LeetCode problem `Merge Sorted Array` **[0088_merge_sorted_array](https://github.com/pointerchain/leetcode_solutions/tree/aed2d646ba6a41d96c4c074ad0f8449c0b316447/0088_merge_sorted_array)**
+    - Learned about `reverse iterators` (`rbegin`, `rend`) and got some solid practice with iterators in general.
+
 ## 2025-11-22
 - Tried to do a LeetCode problem but couldn't get it working - will finish tomorrow.
 - More of a rest day.
