@@ -1,3 +1,6 @@
+## 2025-11-25
+- Been working on a non C++ game all day.
+
 ## 2025-11-24
 - Rest day, watch some C++ videos but not much.
 
